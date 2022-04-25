@@ -1,8 +1,8 @@
 <?php
     $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $database = "carrentalsystem";
+    $username = "id18837197_cra";
+    $password = "Garvoberoi5@";
+    $database = "id18837197_carrentalsystem";
 
     $conn = mysqli_connect($servername, $username, $password, $database);
     if(!$conn){

@@ -3,6 +3,7 @@
     $dateErr=false;
     $end_date =$start_date=$start_date1=$end_date1="";
     $available = true;
+    $submit="";
     require_once 'connection.php';
     if($_SERVER['REQUEST_METHOD']=='POST'){
         $submit=false;

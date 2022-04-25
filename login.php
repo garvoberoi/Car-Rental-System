@@ -43,7 +43,7 @@
                 $_SESSION['customer'] = true;
                 $_SESSION['cragency'] = false;
                 $_SESSION['cus_id'] = $rows['cus_id'];
-                header('location:home.php');
+                header('location:index.php');
             }else{
                 $passErr=true;
             }
@@ -68,7 +68,7 @@
                     $_SESSION['cragency'] = true;
                     $_SESSION['customer'] = false;
                     $_SESSION['cra_id'] = $rows['cra_id'];
-                    header('location:home.php');
+                    header('location:index.php');
                 }else{
                     $passErr=true;
                 }
@@ -123,7 +123,7 @@
         </div>
         <div>
             <h4 class="login-text">Return to Home</h4>
-            <a href="home.php" ><div class="login">HOME</div></a>
+            <a href="index.php" ><div class="login">HOME</div></a>
         </div>
     </div>
     </div>

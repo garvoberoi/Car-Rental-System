@@ -86,7 +86,7 @@
             <div class="top_bar">
                 <div class="top_bar_left">
                     <ul class="top_list">
-                        <a href="home.php"><li>HOME</li></a>
+                        <a href="index.php"><li>HOME</li></a>
                         <a href="login.php"><li>LOG IN</li></a>
                         <li class="signup-dropdown">
                         <button class="signupbtn">SIGN UP
@@ -193,7 +193,7 @@
                 <div class="footer-text-left">CAR RENTAL AGENCY</div>
                 <div class="footer-list-right">
                     <ul class="footer-top-list">
-                        <a href="home.php"><li>HOME</li></a>
+                        <a href="index.php"><li>HOME</li></a>
                         <a href="login.php"><li>LOG IN</li></a>
                         <li class="signup-dropdown">
                         <button class="footer-signupbtn">SIGN UP

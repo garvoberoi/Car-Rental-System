@@ -6,7 +6,7 @@
     $rErr=false;
     $_SESSION['submit']=false;
     if(!$_SESSION['cragency']){
-        header('location: home.php');
+        header('location: index.php');
         exit;
     }
     if($_SERVER['REQUEST_METHOD']=='POST'){
@@ -86,7 +86,7 @@
             <div class="top_bar">
                 <div class="top_bar_left">
                     <ul class="top_list">
-                        <a href="home.php"><li>HOME</li></a>
+                        <a href="index.php"><li>HOME</li></a>
                         <a href="login.php"><li>LOG IN</li></a>
                         <li class="signup-dropdown">
                         <button class="signupbtn">SIGN UP
@@ -151,7 +151,7 @@
                 <div class="footer-text-left">CAR RENTAL AGENCY</div>
                 <div class="footer-list-right">
                     <ul class="footer-top-list">
-                        <a href="home.php"><li>HOME</li></a>
+                        <a href="index.php"><li>HOME</li></a>
                         <a href="login.php"><li>LOG IN</li></a>
                         <li class="signup-dropdown">
                         <button class="footer-signupbtn">SIGN UP
@@ -168,33 +168,5 @@
             </div>
             <div class="copyright">2022 Copyright (C) Garv Oberoi All rights reserved </div>
     </div>
-
-
-
-
-
-
-
-
-    <!--<h3>Register a new car</h3>
-    <form method="POST">
-        <input type="text" placeholder="vehicle model" name="veh_model">
-        <input type="text" placeholder="vehicle number" name="veh_number">
-        <input list="seat" placeholder="Seat Capacity" name="seat_cap">
-        <datalist id="seat">
-            <option value="2">
-            <option value="3">
-            <option value="4">
-            <option value="5">
-            <option value="6">
-        </datalist>
-        <input type="text" placeholder="rent" name="rent">
-        <input list="avail" placeholder="Available (yes/no)" name="avail">
-        <datalist id="avail">
-            <option value="Yes">
-            <option value="No">
-        </datalist>
-        <button type="submit">Add a Car</button>
-    </form>-->
 </body>
 </html>

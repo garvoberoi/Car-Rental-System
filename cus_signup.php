@@ -91,7 +91,7 @@
         </div>
         <div>
             <h4 class="login-text">Return to Home</h4>
-            <a href="home.php" ><div class="login">HOME</div></a>
+            <a href="index.php" ><div class="login">HOME</div></a>
         </div>
     </div>
     </div>

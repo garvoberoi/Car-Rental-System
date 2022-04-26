@@ -3,7 +3,7 @@
     $dateErr=false;
     $end_date =$start_date=$start_date1=$end_date1="";
     $available = true;
-    $submit="";
+    $submit=$veh_num="";
     require_once 'connection.php';
     if($_SERVER['REQUEST_METHOD']=='POST'){
         $submit=false;
@@ -172,6 +172,7 @@
                 $num = mysqli_num_rows($result);
                 if($num>0){
                     while($row = mysqli_fetch_assoc($result)){
+                        $veh_num = strtoupper($row['v_num']);
             ?>
             <div class="card">
                 <h3 class="card-text1"><?= $row['v_model'] ?></h3>
@@ -179,6 +180,7 @@
                     <div class="card-text2-s">Seat capacity: <b><?= $row['seat_cap'] ?></b></div>
                     <div class="card-text2-r">Rent per day: <b><?= $row['rent'] ?></b></div>
                 </div>
+                <div class="card-text3">Car Number:<b> <?= $veh_num?></b></div>
                 <button class='book btn btn-sm btn-primary rnt-btn' id="<?= $row['v_id'] ?>">Rent this car</button>
             </div>
             <?php

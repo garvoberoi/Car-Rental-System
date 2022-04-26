@@ -2,7 +2,7 @@ body{
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family: 'Josefin Sans';
+    font-family: 'Josefin Sans', sans-serif;
 }
 a{
     text-decoration: none;
@@ -162,6 +162,11 @@ a{
 }
 .card-text2{
     text-transform: capitalize;
+    padding:20px;
+    border-bottom:1px solid rgb(221, 221, 221);
+}
+.card-text3{
+    text-align: center;
     padding:20px;
     border-bottom:1px solid rgb(221, 221, 221);
 }
